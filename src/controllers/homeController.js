@@ -1,5 +1,5 @@
 const ProdutoModel = require('../models/produtoModel');
-const UsuarioModel = require('../models/usuarioModel');
+const Usuario = require('../models/usuarioModel');
 const fs = require('fs');
 const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
@@ -18,7 +18,7 @@ const homeController = {
     res.render('home/cadastro');
   },
   store: (req, res) => {
-    const usuario = UsuarioModel.save(req.body);
+    const usuario = Usuario.save(req.body);
     let errors = validationResult(req);
 
     if(errors.isEmpty()) {

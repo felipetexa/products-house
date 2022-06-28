@@ -5,7 +5,7 @@ const produtoController = {
   detalhe: (req, res) => {
     const {id} = req.params;
     const produto = ProdutoModel.findById(id);
-    res.render('produtos/detalhes', { produto });
+    res.render('adm/produtos/detalhes', { produto });
   },
   listarAdm: (req, res) => {
     const produtos = ProdutoModel.findAll();
@@ -14,16 +14,45 @@ const produtoController = {
   cadastro: (req, res) => {
     res.render('adm/produtos/cadastro');
   },
+  store: (req, res) => {
+    const { imagem, nome, preco, ativo, descricao } = req.body;
+    const produto = {
+        nome,
+        imagem,
+        preco,
+        ativo: (ativo ? true : false),
+        descricao,
+    };
+
+    ProdutoModel.save(produto);
+
+    return res.redirect("/adm/produtos");
+},
   editar: (req, res) => {
     const {id} = req.params;
     const produto = ProdutoModel.findById(id);
     res.render('adm/produtos/editar', { produto });
   },
-  viewAdm: (req, res) => {
+  editarProduto: (req, res) => {
+        const {id} = req.params;
+        const {nome, imagem, preco, ativo, descricao} = req.body;
+        const produto = {
+            id,
+            nome,
+            imagem,
+            preco,
+            ativo: (ativo ? true : false),
+            descricao
+        }
+
+        ProdutoModel.update(id, produto);
+        return res.redirect("/adm/produtos");
+  },
+  deletarProduto: (req, res) => {
     const {id} = req.params;
-    const produto = ProdutoModel.findById(id);
-    res.render('adm/produtos/detalhesAdm', { produto });
-  }
+    ProdutoModel.delete(id);
+    return res.redirect("/adm/produtos");
+}
 }
 
 module.exports = produtoController;
