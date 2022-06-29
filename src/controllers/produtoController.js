@@ -12,7 +12,7 @@ const produtoController = {
     res.render('adm/produtos/lista', { produtos });
   },
   cadastro: (req, res) => {
-    res.render('adm/produtos/cadastro');
+    return res.render('adm/produtos/cadastro');
   },
   store: (req, res) => {
     const { imagem, nome, preco, ativo, descricao } = req.body;

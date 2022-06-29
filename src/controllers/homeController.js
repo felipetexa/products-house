@@ -1,47 +1,30 @@
-const ProdutoModel = require('../models/produtoModel');
-const Usuario = require('../models/usuarioModel');
-const fs = require('fs');
-const { validationResult } = require('express-validator');
-const bcrypt = require('bcryptjs');
-const session = require('express-session');
-const { v4: geradorDeId } = require('uuid');
+const ProdutoModel = require("../models/produtoModel");
 
 const homeController = {
-  index: (req, res) => {
-    const produtos = ProdutoModel.findAll();
-    res.render('home/landingpage', { produtos });
-  },
-  login: (req, res) => {
-    res.render('home/login');
-  },
-  cadastrar: (req, res) => {
-    res.render('home/cadastro');
-  },
-  store: (req, res) => {
-    const usuario = Usuario.save(req.body);
-    let errors = validationResult(req);
+    index: (req, res) => {
+        const produtos = ProdutoModel.findAll();
 
-    if(errors.isEmpty()) {
-        let content = fs.readFileSync("./db.json", "utf8");
-        const db = JSON.parse(content);
+        if(req.session.usuario){
+            return res.render("home/landingpage", {produtos, usuario: req.session.usuario});
+        }
 
-        const { nome, email, senha } = req.body;
+        return res.render("home/landingpage", {produtos});
 
-        const senhaCriptografada = bcrypt.hashSync(senha, 10);
+    },
 
-        const usuario = {id: geradorDeId(), nome, email, senha: senhaCriptografada }
+    showOneProduct: (req, res) => {
+        const { id } = req.params;
+        const produto = ProdutoModel.findById(id);
+        if(!produto){
+            return res.render("home/not-found", {error: "Produto não encontrado"});
+        }
 
-        db.usuarios.push(usuario);
-        content = JSON.stringify(db);
+        if(req.session.usuario){
+            return res.render("produtos/detalhes", {produto, usuario: req.session.usuario});
+        }
 
-        fs.writeFileSync("./db.json", content);
-
-        return res.redirect("home/login");
+        return res.render("produtos/detalhes", {produto});
     }
-
-    return res.render("home/cadastrar", {listaDeErros: errors.errors, old: req.body})
-
-  }
-}
+};
 
 module.exports = homeController;

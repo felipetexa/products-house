@@ -1,1 +1,36 @@
-{"produtos":[{"id":"cd31e137-c78c-4fec-a868-d8780bb96b56","nome":"Console Microsoft Xbox Series S, 512GB, Branco","descricao":"Xbox Series S, o menor e mais elegante de todos os tempos. Com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o Xbox Series S oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.","imagem":"https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_gg.jpg","preco":"2.249,90","ativo":true},{"id":"864c6df0-7da4-4bbb-9289-b860afd229ed","nome":"Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS  ","imagem":"https://images.kabum.com.br/produtos/fotos/114351/monitor-gamer-led-ozone-27-qhd-2k-ips-hdmi-displayport-144hz-0-5ms-ozdsp27ips_1608297650_gg.jpg  ","preco":"3999.90","ativo":false,"descricao":"Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS  "}],"usuarios":[{"id":"cd31e137-c78c-4fec-a868-d8780bb96b56","nome":"João","email":"joao@mail.com","senha":"123456"}]}
+{
+  "produtos": [
+    {
+      "id": "cd31e137-c78c-4fec-a868-d8780bb96b56",
+      "nome": "Console Microsoft Xbox Series S, 512GB, Branco",
+      "descricao": "Xbox Series S, o menor e mais elegante de todos os tempos. Com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o Xbox Series S oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_gg.jpg",
+      "preco": "2.249,90",
+      "ativo": true
+    },
+    {
+      "id": "864c6df0-7da4-4bbb-9289-b860afd229ed",
+      "nome": "Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS  ",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/114351/monitor-gamer-led-ozone-27-qhd-2k-ips-hdmi-displayport-144hz-0-5ms-ozdsp27ips_1608297650_gg.jpg",
+      "preco": "3999.90",
+      "ativo": false,
+      "descricao": "Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS  "
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "admin",
+      "email": "admin@mail.com",
+      "senha": "$2a$10$IIuySMk/g65avCqxBIucouqTIztZTwCmGLDST4Mm8Re1uoveverBy",
+      "logado": false,
+      "tipoUsuario": "admin"
+    },
+    {
+      "nome": "Felipe",
+      "email": "felipe@mail.com",
+      "senha": "$2a$10$IIuySMk/g65avCqxBIucouqTIztZTwCmGLDST4Mm8Re1uoveverBy",
+      "id": "2bbf3df1-feab-43c4-9d0d-ac2ca7166106"
+    }
+  ]
+}

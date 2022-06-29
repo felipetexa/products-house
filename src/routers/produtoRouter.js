@@ -1,8 +1,11 @@
 const express = require('express');
 const produtoController = require('../controllers/produtoController');
 const router = express.Router();
+const isLogin = require('../middlewares/isLogin');
+const isAdmin = require('../middlewares/isAdmin');
 
-router.get('/detalhes/:id', produtoController.detalhe);
+router.use(isLogin);
+router.use(isAdmin);
 router.get('/adm/produtos/:id', produtoController.detalhe);
 router.get('/adm/produtos', produtoController.listarAdm);
 router.get('/adm/produtos/cadastro', produtoController.cadastro);
