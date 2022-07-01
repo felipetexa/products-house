@@ -5,7 +5,7 @@ const produtoController = {
   detalhe: (req, res) => {
     const {id} = req.params;
     const produto = ProdutoModel.findById(id);
-    res.render('adm/produtos/detalhes', { produto });
+    return res.render('adm/produtos/detalhes', { produto });
   },
   listarAdm: (req, res) => {
     const produtos = ProdutoModel.findAll();
