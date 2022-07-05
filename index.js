@@ -5,6 +5,7 @@ const app = express();
 const homeRouter = require('./src/routers/homeRouter');
 const produtoRouter = require('./src/routers/produtoRouter');
 const authRouter = require('./src/routers/authRouter');
+const carrinhoRouter = require('./src/routers/carrinhoRouter');
 
 app.use(methodOverride('_method'));
 app.use(express.static('./src/public'));
@@ -20,6 +21,7 @@ app.use(session({
 
 app.use(homeRouter);
 app.use(authRouter);
+app.use(carrinhoRouter);
 app.use(produtoRouter);
 
 app.use((req, res, next) => {

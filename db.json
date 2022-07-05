@@ -5,16 +5,24 @@
       "nome": "Console Microsoft Xbox Series S, 512GB, Branco",
       "descricao": "Xbox Series S, o menor e mais elegante de todos os tempos. Com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o Xbox Series S oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.",
       "imagem": "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_gg.jpg",
-      "preco": "2.249,90",
+      "preco": "2249.90",
       "ativo": true
     },
     {
       "id": "864c6df0-7da4-4bbb-9289-b860afd229ed",
-      "nome": "Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS  ",
-      "imagem": "https://images.kabum.com.br/produtos/fotos/114351/monitor-gamer-led-ozone-27-qhd-2k-ips-hdmi-displayport-144hz-0-5ms-ozdsp27ips_1608297650_gg.jpg",
-      "preco": "3999.90",
-      "ativo": false,
-      "descricao": "Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS  "
+      "nome": "Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS   ",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/114351/monitor-gamer-led-ozone-27-qhd-2k-ips-hdmi-displayport-144hz-0-5ms-ozdsp27ips_1608297650_gg.jpg ",
+      "preco": "3999.9",
+      "ativo": true,
+      "descricao": "Monitor Gamer Ozone 27 LED, 144 Hz, Quad HD, 1ms, FreeSync, HDR, sRGB, HDMI/DisplayPort - OZDSP27IPS   "
+    },
+    {
+      "nome": "Robô Aspirador de Pó KaBuM! Smart 500, Preto - Recarregamento Automático, Filtro HEPA, Controle via Aplicativo - KBSF000",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/114195/robo-aspirador-de-po-kabum-smart-wi-fi_1602000476_gg.jpg",
+      "preco": "799",
+      "ativo": true,
+      "descricao": "Robô Aspirador de Pó KaBuM! Smart 500, Preto\r\nConforto e praticidade na limpeza diária do seu lar! Que tal não se preocupar mais em varrer, aspirar e passar pano todos os dias? Com o Robô Aspirador de Pó KaBuM! Smart você curte seu dia, enquanto ele limpa! \r\n\r\n \r\n\r\n5 Funções de Limpeza\r\nO Robô Aspirador de Pó KaBuM! Smart possui 5 funções de limpeza com 3 tipos de movimento (Zigue-zague, Cantos e Espiral) que permitem uma limpeza geral do ambiente, a limpeza de cantos contornando todo o local, limpeza de uma área específica e limpeza geral com maior poder de sucção. E ainda, é possível optar pela limpeza umedecida onde o próprio robô utiliza a água do seu reservatório para umedecer o pano e limpar o local. \r\n\r\n \r\n\r\nTira o Pó e Passa Pano\r\nVocê não vai precisar molhar o chão ou o pano que acompanha o produto, basta substituir o reservatório de pó pelo de água com o pano acoplado. O Robô inteligente adapta-se a diferentes tipos de piso e é projetado para limpar embaixo de móveis, como: camas, sofás, armários e áreas difíceis de alcançar. Possui ainda Filtro de Alta Eficiência (HEPA) contra alérgenos de mofo, pólen, poeira e ácaros. Além disso, o robô aspirador de pó inteligente conta com sensores infravermelhos antiqueda e anticolisão que detectam as barreiras e redirecionam o trajeto sempre que encontra um obstáculo pela frente. \r\n\r\n \r\n\r\nRetorno Automático para a Base\r\nO Robô Aspirador de Pó KaBuM! Smart possui bateria recarregável, função de retorno automático para a base ao detectar bateria baixa e pode ser utilizado no modo manual ou automático, através do seu controle remoto. Você pode ainda controlar todo o funcionamento do Robô à distância pelo seu Smartphone com o aplicativo KaBuM! Smart.",
+      "id": "a646fee3-838f-498e-817d-c0d4ae579ac6"
     }
   ],
   "usuarios": [
